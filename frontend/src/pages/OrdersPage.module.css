@@ -1,0 +1,19 @@
+.page  { max-width:900px; margin:0 auto; padding:32px 24px 80px; }
+.title { font-family:var(--font-display); font-size:28px; font-weight:800; color:var(--text); margin-bottom:24px; }
+.loading,.empty { display:flex; flex-direction:column; align-items:center; justify-content:center; padding:80px; gap:12px; color:var(--text-muted); }
+.shopBtn { padding:10px 24px; background:var(--accent); border-radius:8px; color:#fff; font-weight:700; text-decoration:none; margin-top:8px; }
+.list { display:flex; flex-direction:column; gap:12px; }
+.orderCard {
+  display:block; text-decoration:none;
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:var(--radius-lg); padding:20px 24px;
+  transition:all 0.2s;
+}
+.orderCard:hover { border-color:var(--accent); transform:translateY(-1px); }
+.orderTop { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.orderId  { color:var(--text); font-weight:800; font-family:var(--font-mono); font-size:15px; }
+.orderDate{ color:var(--text-muted); font-size:12px; margin-top:2px; }
+.statusBadge { padding:3px 10px; border-radius:20px; font-size:11px; font-weight:700; text-transform:uppercase; border:1px solid; font-family:var(--font-mono); }
+.total { color:var(--accent); font-weight:800; font-family:var(--font-display); font-size:18px; }
+.items { display:flex; flex-wrap:wrap; gap:8px; }
+.itemChip { background:var(--surface-high); border:1px solid var(--border); color:var(--text-muted); padding:4px 10px; border-radius:20px; font-size:12px; }

@@ -1,0 +1,75 @@
+.container {
+  min-height: calc(100vh - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+}
+.header { text-align: center; margin-bottom: 28px; }
+.icon { font-size: 36px; margin-bottom: 12px; }
+.title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.subtitle { color: var(--text-muted); font-size: 14px; }
+
+.demoBtns { display: flex; gap: 8px; margin-bottom: 24px; }
+.demoUser, .demoAdmin {
+  flex: 1;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.2s;
+}
+.demoUser  { background: var(--blue-soft);   border: 1px solid rgba(96,165,250,0.3); color: var(--blue); }
+.demoAdmin { background: var(--accent-soft); border: 1px solid rgba(255,92,53,0.3);  color: var(--accent); }
+.demoUser:hover  { background: rgba(96,165,250,0.2); }
+.demoAdmin:hover { background: rgba(255,92,53,0.2); }
+
+.form { display: flex; flex-direction: column; gap: 16px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+.error {
+  background: var(--red-soft);
+  border: 1px solid rgba(239,68,68,0.3);
+  color: var(--red);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.submitBtn {
+  padding: 13px;
+  background: var(--accent);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 0.2s;
+  font-family: var(--font-body);
+  margin-top: 4px;
+}
+.submitBtn:hover:not(:disabled) { background: var(--accent-hover); }
+.submitBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+.switchLink { text-align: center; color: var(--text-muted); font-size: 13px; margin-top: 20px; }
+.switchLink a { color: var(--accent); font-weight: 600; }
